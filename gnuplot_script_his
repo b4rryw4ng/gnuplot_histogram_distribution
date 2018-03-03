@@ -1,0 +1,20 @@
+
+#Histogram
+reset
+set xlabel "Number of Data (times)" font ",40" offset 0,-5
+
+set ylabel "Oneway Delay (msec)" font ",40" offset -15
+set title "RSRP ≥ -90 to < -80 Position (1 sec) Histogram" font ",40"
+set ytics font ",30" offset -2
+set xtics font ",30" offset 0,-2
+set xrange [1:1000]
+
+set lmargin 30
+set rmargin 10
+set bmargin 10
+set tmargin 10
+plot "his_input" with boxes 
+
+
+
+

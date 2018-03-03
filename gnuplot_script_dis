@@ -1,0 +1,18 @@
+#Distribution
+reset
+set title "RSRP ≥ -90 to < -80 (1 sec) Distribution" font ",40"
+
+set style fill solid 0.25 border 
+
+set xlabel "Oneway Delay Millisecond (msec)" font ",40" offset 0,-5
+
+set ylabel "Count (times)" font ",40" offset -15
+
+set ytics font ",30" offset -2
+set xtics font ",30" offset 0,-2
+set xrange [0:100]
+set lmargin 30
+set rmargin 10
+set bmargin 10
+set tmargin 10
+plot "dis_input" using 1:2 with line title "Distributin Curve"
